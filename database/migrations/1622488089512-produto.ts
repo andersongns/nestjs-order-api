@@ -30,7 +30,7 @@ export class produto1622488089512 implements MigrationInterface {
           {
             name: 'valor',
             type: 'decimal',
-            precision: 5,
+            precision: 8,
             scale: 2,
             default: 0,
           },
