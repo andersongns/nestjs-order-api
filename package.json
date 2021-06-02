@@ -28,6 +28,7 @@
     "typeorm:create": "npm run typeorm migration:create -- -n"
   },
   "dependencies": {
+    "@nestjs-modules/mailer": "^1.6.0",
     "@nestjs/common": "^7.6.15",
     "@nestjs/core": "^7.6.15",
     "@nestjs/mapped-types": "*",
@@ -37,6 +38,9 @@
     "class-validator": "^0.13.1",
     "dotenv": "^10.0.0",
     "mysql2": "^2.2.5",
+    "nodemailer": "^6.6.1",
+    "pdfkit": "^0.12.1",
+    "pug": "^3.0.2",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
     "rxjs": "^6.6.6",
@@ -49,6 +53,7 @@
     "@types/express": "^4.17.11",
     "@types/jest": "^26.0.22",
     "@types/node": "^14.14.36",
+    "@types/pdfkit": "^0.11.0",
     "@types/supertest": "^2.0.10",
     "@typescript-eslint/eslint-plugin": "^4.19.0",
     "@typescript-eslint/parser": "^4.19.0",

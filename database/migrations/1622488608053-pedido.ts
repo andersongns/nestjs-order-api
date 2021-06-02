@@ -14,10 +14,11 @@ export class pedido1622488608053 implements MigrationInterface {
           },
           {
             name: 'data_pedido',
-            type: 'varchar',
+            type: 'timestamp',
+            default: 'CURRENT_TIMESTAMP',
           },
           {
-            name: 'observação',
+            name: 'observacao',
             type: 'varchar',
           },
           {
