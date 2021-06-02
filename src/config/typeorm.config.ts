@@ -13,8 +13,6 @@ const typeOrmConfig: ConnectionOptions = {
   cli: {
     migrationsDir: 'database/migrations',
   },
-  entities: [__dirname + '/../**/*.entity.{js,ts}'],
-  synchronize: false,
 };
 
 export = typeOrmConfig;

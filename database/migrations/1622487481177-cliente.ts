@@ -22,8 +22,8 @@ export class cliente1622487481177 implements MigrationInterface {
           },
           {
             name: 'sexo',
-            type: 'char',
-            length: '1',
+            type: 'enum',
+            enum: ['F', 'M', 'I'],
           },
           {
             name: 'email',

@@ -1,8 +1,22 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import typeOrmConfig from './config/typeorm.config';
+import { ClientesModule } from './clientes/clientes.module';
+import env from './config/env';
 @Module({
-  imports: [TypeOrmModule.forRoot(typeOrmConfig)],
+  imports: [
+    TypeOrmModule.forRoot({
+      type: 'mysql',
+      host: env.database.host,
+      port: env.database.port,
+      username: env.database.username,
+      password: env.database.password,
+      database: env.database.database,
+      keepConnectionAlive: true,
+      entities: [__dirname + '/../**/**/*.entity.{js,ts}'],
+      synchronize: false,
+    }),
+    ClientesModule,
+  ],
   controllers: [],
   providers: [],
 })
